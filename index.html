@@ -424,8 +424,18 @@
 </main>
 
 <footer>
-  <p>This site shares tool deals and links to Amazon product pages.</p>
+  <p>As an Amazon Associate I earn from qualifying purchases.</p>
 </footer>
+
+<script>
+  const AMAZON_TAG = "deal0e9b-20";
+  document.querySelectorAll('a[href*="amazon.com/dp/"]').forEach((link) => {
+    const url = new URL(link.href);
+    url.searchParams.set("tag", AMAZON_TAG);
+    link.href = url.toString();
+    link.rel = "nofollow sponsored noopener";
+  });
+</script>
 
 </body>
 </html>
