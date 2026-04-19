@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Deals</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .deal-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .deal-card h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+
+    .deal-meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0a7a2f;
+      margin-bottom: 8px;
+    }
+
+    .old-price {
+      font-size: 14px;
+      color: #888;
+      text-decoration: line-through;
+      margin-bottom: 14px;
+    }
+
+    .deal-description {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .deal-button {
+      display: inline-block;
+      background: #ff9900;
+      color: #111;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .deal-button:hover {
+      background: #e68a00;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 40px auto 24px;
+      padding: 0 16px;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tool Deals</h1>
+    <p>The best tool deals, all in one place.</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">Featured Deals</h2>
+
+    <div class="deals-grid">
+      <div class="deal-card">
+        <h2>Sample Tool Deal</h2>
+        <div class="deal-meta">Brand • Category</div>
+        <div class="price">$99.00</div>
+        <div class="old-price">$149.00</div>
+        <div class="deal-description">
+          Replace this with your own deal summary.
+        </div>
+        <a class="deal-button" href="https://www.amazon.com/dp/REPLACE_ASIN/?tag=YOURTAG-20" target="_blank" rel="nofollow sponsored noopener">
+          View on Amazon
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>This site shares tool deals and may contain affiliate links.</p>
+  </footer>
+</body>
+</html>
